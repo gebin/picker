@@ -27,17 +27,23 @@
   .picker-panel
     position: absolute
     z-index: 600
-    bottom: 0
-    width: 100%
+    
+    bottom: 50%
+    width: 60%
+    left: 50%
+
     height: 243px
-    background: #fff
+    background: #18171C
     transform: translateY(243px)
     -webkit-transform: translateY(243px)
     transition: all 0.5s
     -webkit-transition: all 0.5s
+    border:1px solid #92f3ff
+    border-radius:5px
+
     &.show
-      transform: translateY(0)
-      -webkit-transform: translateY(0)
+      transform: translate(-50%,50%)
+      -webkit-transform: translate(-50%,50%)
     .picker-choose
       position: relative
       height: 50px
@@ -52,6 +58,7 @@
         position: absolute
         padding: 10px
         top: 6px
+        width:50%
       .confirm
         right: 0
         color: #fa8919
@@ -70,11 +77,11 @@
       .mask-top
         border-bottom-1px(#ccc)
         top: 0
-        gradient-from-bottom(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8))
+        gradient-from-bottom(rgba(24,23,28,0.2), rgba(24,23,28,0.5)) 
       .mask-bottom
         border-top-1px(#ccc)
         bottom: 0
-        gradient-from-top(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8))
+        gradient-from-top(rgba(24,23,28,0.2), rgba(24,23,28,0.5))
     .wheel-wrapper
       flex-box()
       padding: 0 10px
@@ -90,7 +97,7 @@
             height: 36px
             overflow: hidden
             white-space: nowrap
-            color: #333
+            color: #92f3ff
   .picker-footer
     height: 20px
 
