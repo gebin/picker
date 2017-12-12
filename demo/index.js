@@ -8,6 +8,29 @@ var selectedIndex = [0, 0, 0]; /* 默认选中的地区 */
 
 var checked = [0, 0, 0]; /* 已选选项 */
 
+
+
+/**
+ * rem布局，自适应
+ * @return {[type]}     [description]
+ */
+function flexbox  () {
+  var html = document.documentElement;
+  var n = html.clientWidth / 7.5;
+  html.style.fontSize = n + 'px';
+  window.rem = n;
+}
+
+/**
+ * 初始化自适应布局
+ * @return {[type]} [description]
+ */
+function initFlexbox (delay,atleast) { 
+  flexbox();
+}
+
+initFlexbox();
+
 function creatList(obj, list){
   obj.forEach(function(item, index, arr){
   var temp = new Object();
