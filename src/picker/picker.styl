@@ -33,13 +33,13 @@
     left: 50%
 
     height: 4.86rem
-    background: #18171C
+    background: #fff
     transform: translate(-2rem,12rem)
     -webkit-transform: translate(-2rem,12rem)
     transition: all 0.5s 
     -webkit-transition: all 0.5s
-    border:1px solid #92f3ff
-    border-radius:.1rem
+    // border:1px solid #92f3ff
+    // border-radius:.1rem
 
     &.show
       transform: translate(-50%,50%)
@@ -49,13 +49,13 @@
       height: 1rem
       color: #878787
       font-size: .28rem
-      border-top: 1px solid #92f3ff
-      border-bottom: 1px solid #92f3ff
+      // border-top: 1px solid #92f3ff
+      // border-bottom: 1px solid #92f3ff
       
-      background-color: #1b4e61
-      border-radius: 0 0 0.1rem 0.1rem
+      background-color: #ffba12
+      // border-radius: 0 0 0.1rem 0.1rem
       font-size: .32rem
-      color: #fff
+      color: #422918
 
       .picker-title
         line-height: 1rem
@@ -70,7 +70,12 @@
         right: 0
       .cancel
         left: 0
-        border-right: 1px solid #92f3ff
+        // border-right: 1px solid #333
+      .split-lin
+        border: 0.01rem solid #333;
+        height: .5rem;
+        display: inline-block;
+        margin-top: .25rem;
 
     .picker-content
       position: relative
@@ -85,11 +90,11 @@
       .mask-top
         border-bottom-1px(#ccc)
         top: 0
-        gradient-from-bottom(rgba(24, 23, 28, 0.2), rgba(24, 23, 28, 0.5)) 
+        gradient-from-bottom(rgba(255,255,255, 0.5), rgba(255,255,255, 1)) 
       .mask-bottom
         border-top-1px(#ccc)
         bottom: 0
-        gradient-from-top(rgba(24,23,28,0.2), rgba(24,23,28,0.5))
+        gradient-from-top(rgba(255,255,255, 0.5), rgba(255,255,255, 1))
     .wheel-wrapper
       flex-box()
       padding: 0 .2rem
@@ -105,7 +110,7 @@
             height: .72rem
             overflow: hidden
             white-space: nowrap
-            color: #92f3ff
+            color: #333
   .picker-footer
     height: .4rem
 
